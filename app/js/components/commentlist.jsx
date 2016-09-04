@@ -8,7 +8,7 @@ class CommentList extends Component {
       return <Comment key={comment.id} author= {comment.author}>{comment.text}</Comment>;
     });
     return (
-      <Table>
+      <Table striped bordered condensed hover>
         <thead>
           <tr>
             <th>author</th>

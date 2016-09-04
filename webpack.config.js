@@ -5,14 +5,17 @@ module.exports = {
         filename: 'bundle.js'
     },
     module: {
-        loaders: [{
+        loaders: [
+          {
             test: /\.jsx?$/,
             loader: 'babel',
             exclude: /node_modules/,
             query: {
                 presets: ['es2015', 'react']
             }
-        }]
+        },
+        { test: /\.css$/, loader: "style!css" }
+      ]
     },
     resolve: {
       root: __dirname,

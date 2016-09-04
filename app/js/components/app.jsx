@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import {Button} from 'react-bootstrap';
+import {Grid} from 'react-bootstrap';
 import Comment from 'Comment';
 import AddComment from 'AddComment';
 import CommentList from 'CommentList';
@@ -21,10 +21,10 @@ class App extends Component {
 
   render() {
       return (
-        <div>
+        <Grid>
           <h1>All comments page</h1>
           <CommentList comments= {this.state.comments}/>
-        </div>
+        </Grid>
       );
   }
 }
