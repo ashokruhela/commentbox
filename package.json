@@ -1,0 +1,35 @@
+{
+  "name": "commentbox",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "react":"*",
+    "react-dom":"*"
+  },
+  "devDependencies": {
+    "babel-core":"*",
+    "babel-loader":"*",
+    "babel-preset-es2015": "*",
+    "babel-preset-react":"*",
+    "express": "*",
+    "path": "*",
+    "react-bootstrap": "*",
+    "webpack": "*"
+    
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ashokruhela/commentbox.git"
+  },
+  "author": "ashok",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ashokruhela/commentbox/issues"
+  },
+  "homepage": "https://github.com/ashokruhela/commentbox#readme"
+}
