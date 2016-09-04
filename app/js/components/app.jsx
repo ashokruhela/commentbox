@@ -3,7 +3,7 @@ import {Button} from 'react-bootstrap';
 
 class App extends Component {
     render() {
-        return (<Button bsStyle="success">Success</Button>);
+        return (<Button bsStyle="success">branch testing</Button>);
     }
 }
 
