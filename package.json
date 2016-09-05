@@ -4,12 +4,14 @@
   "description": "",
   "main": "index.js",
   "dependencies": {
+    "axios": "*",
     "body-parser": "*",
     "express": "*",
     "path": "*",
     "react":"*",
     "react-bootstrap": "*",
-    "react-dom":"*"
+    "react-dom":"*",
+    "react-router": "*"
   },
   "devDependencies": {
     "babel-core":"*",

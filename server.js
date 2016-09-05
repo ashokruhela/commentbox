@@ -18,8 +18,7 @@ app.get('/api/comments', function(req, res) {
         console.error(err);
         process.exit(1);
       } else {
-        console.log(JSON.parse(data));
-        res.json(data);
+        res.json(JSON.parse(data));
       }
     });
 });

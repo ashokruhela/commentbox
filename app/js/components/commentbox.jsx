@@ -5,7 +5,7 @@ import AddComment from 'AddComment';
 import CommentList from 'CommentList';
 import commentApi from 'commentApi';
 
-class App extends Component {
+class CommentBox extends Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -14,9 +14,12 @@ class App extends Component {
   }
 
   componentDidMount() {
-    this.setState({
-      comments: commentApi.getComments()
-    })
+    var self = this;
+    commentApi.getComments().then(function(comments) {
+      self.setState({
+        comments: comments
+      })
+    });
   }
 
   render() {
@@ -29,4 +32,4 @@ class App extends Component {
   }
 }
 
-export default App;
+export default CommentBox;

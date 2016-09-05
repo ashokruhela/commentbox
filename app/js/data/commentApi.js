@@ -1,18 +1,17 @@
 var commentApi = {
   getComments: function() {
-    return ([
-        {
-            "id": 1388534400000,
-            "author": "Pete Hunt",
-            "text": "Hey there!"
-        },
-        {
-            "id": 1420070400000,
-            "author": "Paul O’Shannessy",
-            "text": "React is *great*!"
-        }
-    ]
-);
+
+    return fetch('/api/comments', {
+      method: 'Get',
+      headers: new Headers({
+    		'Content-Type': 'application/json'
+    	})
+    }).then(function(response) {
+      return response.json();
+    }).catch(function(res) {
+      return res.error();
+    });
+
   }
 };
 
