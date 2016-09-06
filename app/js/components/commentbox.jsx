@@ -4,6 +4,7 @@ import Comment from 'Comment';
 import AddComment from 'AddComment';
 import CommentList from 'CommentList';
 import commentApi from 'commentApi';
+import {Link} from 'react-router';
 
 class CommentBox extends Component {
   constructor(props) {
@@ -27,6 +28,7 @@ class CommentBox extends Component {
         <Grid>
           <h1>All comments page</h1>
           <CommentList comments= {this.state.comments}/>
+          <Link to="addcomment">Add Comment</Link>
         </Grid>
       );
   }

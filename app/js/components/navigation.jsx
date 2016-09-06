@@ -6,6 +6,7 @@ const Navigation = (props) => {
     <ul>
       <li><IndexLink to="/" activeClassName="active">Home</IndexLink></li>
       <li><Link to="/addcomment" activeClassName="active">Add Comment</Link></li>
+      <li><Link to="/editcomment" activeClassName="active">Edit Comment</Link></li>
     </ul>
   );
 }

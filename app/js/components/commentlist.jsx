@@ -2,6 +2,7 @@ import React, {Component} from 'react';
 import {Table} from 'react-bootstrap';
 import Comment from 'Comment';
 
+
 class CommentList extends Component {
   render(){
     var commentsNode = this.props.comments.map(function(comment){
@@ -19,6 +20,7 @@ class CommentList extends Component {
           {commentsNode}
         </tbody>
       </Table>
+
     );
   }
 }

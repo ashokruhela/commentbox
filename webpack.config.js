@@ -26,8 +26,11 @@ module.exports = {
         CommentBox: 'app/js/components/commentbox.jsx',
         CommentList: 'app/js/components/commentlist.jsx',
         Navigation: 'app/js/components/navigation.jsx',
+        InputForm: 'app/js/components/inputform.jsx',
         NotFound: 'app/js/components/notfound.jsx',
+        EditComment: 'app/js/components/editcomment.jsx',
         commentApi: 'app/js/data/commentApi.js'
+
 
       },
       extenstions: ['', '.js', '.jsx']

@@ -1,10 +1,11 @@
 import React, { PropTypes } from 'react'
+import InputForm from 'InputForm';
 
 class AddComment extends React.Component {
 
   render () {
       return (
-        <div>Component life cycle</div>
+        <InputForm/>
       );
   }
 }
