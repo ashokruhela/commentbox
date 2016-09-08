@@ -6,6 +6,7 @@ import CommentBox from 'CommentBox';
 import NotFound from 'NotFound';
 import EditComment from 'EditComment';
 import {Route, Router, hashHistory, browserHistory, IndexRoute} from 'react-router';
+import InitializeActions from 'InitializeActions';
 
 const routes = {
   path: '/',
@@ -23,6 +24,8 @@ const routes = {
     }
   ]
 };
+
+InitializeActions.initApp();
 
 ReactDOM.render(
   <Router history= {hashHistory} routes= {routes} />

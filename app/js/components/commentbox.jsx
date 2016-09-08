@@ -5,6 +5,7 @@ import AddComment from 'AddComment';
 import CommentList from 'CommentList';
 import commentApi from 'commentApi';
 import {Link} from 'react-router';
+import CommentStore from 'CommentStore';
 
 class CommentBox extends Component {
   constructor(props) {
@@ -14,13 +15,27 @@ class CommentBox extends Component {
     }
   }
 
+  handleChange() {
+    alert('handle change called');
+  }
+
+  componentWillMount() {
+    console.log('will mount called');
+    console.log(CommentStore);
+    CommentStore.addListener('change', this.handleChange);
+  }
+
   componentDidMount() {
     var self = this;
-    commentApi.getComments().then(function(comments) {
+    CommentStore.getComments().then(function(comments) {
       self.setState({
         comments: comments
       })
     });
+  }
+
+  componentWillUnmount() {
+    CommentStore.removeEventListener('change', this.handleChange);
   }
 
   render() {

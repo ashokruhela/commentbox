@@ -29,8 +29,12 @@ module.exports = {
         InputForm: 'app/js/components/inputform.jsx',
         NotFound: 'app/js/components/notfound.jsx',
         EditComment: 'app/js/components/editcomment.jsx',
-        commentApi: 'app/js/data/commentApi.js'
-
+        commentApi: 'app/js/data/commentApi.js',
+        Dispatcher: 'app/js/dispatcher/appdispatcher.js',
+        CommentStore: 'app/js/store/CommentStore.js',
+        CommentAction: 'app/js/actions/CommentAction.js',
+        ActionTypes: 'app/js/constants/actiontypes.js',
+        InitializeActions: 'app/js/actions/initaction.js'
 
       },
       extenstions: ['', '.js', '.jsx']

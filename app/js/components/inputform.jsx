@@ -2,6 +2,7 @@ import React, {Component} from 'react';
 import ReactDOM from 'react-dom';
 import {Form, ControlLabel, FormControl, FormGroup, InputGroup, Col, Button, Row} from 'react-bootstrap';
 import {Navigation} from 'react-router';
+import CommentAction from 'CommentAction';
 
 class InputForm extends Component {
   constructor(props){
@@ -11,12 +12,6 @@ class InputForm extends Component {
 
   }
 
-  bindMethod(...methods) {
-    methods.forEact(function(method) {
-      this.methods[method] = this.methods[method].bind(this);
-    })
-  }
-
   onSubmit(e) {
     e.preventDefault();
     let authorNameRef = ReactDOM.findDOMNode(this.refs.inputAuthorName);
@@ -24,6 +19,7 @@ class InputForm extends Component {
 
     console.log(authorNameRef.value);
     console.log(authorCommentRef.value);
+    CommentAction.AddCommentAction();
   }
 
   onCancel(e) {

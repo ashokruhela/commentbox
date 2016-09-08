@@ -6,25 +6,26 @@
   "dependencies": {
     "axios": "*",
     "body-parser": "*",
+    "events": "^1.1.1",
     "express": "*",
+    "flux": "^2.1.1",
+    "es6-object-assign": "*",
     "path": "*",
-    "react":"*",
+    "react": "*",
     "react-bootstrap": "*",
-    "react-dom":"*",
+    "react-dom": "*",
     "react-router": "*"
   },
   "devDependencies": {
-    "babel-core":"*",
-    "babel-loader":"*",
+    "babel-core": "*",
+    "babel-loader": "*",
     "babel-preset-es2015": "*",
-    "babel-preset-react":"*",
+    "babel-preset-react": "*",
     "webpack": "*"
-
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-
   "repository": {
     "type": "git",
     "url": "git+https://github.com/ashokruhela/commentbox.git"
